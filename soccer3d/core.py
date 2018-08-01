@@ -325,7 +325,7 @@ class YoutubeVideo:
             else:
                 keep2 = nms(root_box.astype(np.float32), 0.1)
 
-            poses = [poses[ii] for ii in keep2]
+            poses = [poses[ii] for ii in keep2 if ii < len(poses)]
 
             # Remove poses outside of field
             keep3 = []

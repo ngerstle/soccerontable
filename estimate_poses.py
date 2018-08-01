@@ -1,6 +1,3 @@
-import os, sys
-sys.path.append(os.path.abspath("/data/soccerontable"))
-sys.path.append(os.path.abspath("/data/soccerontable/utils"))
 import argparse
 import soccer3d
 
