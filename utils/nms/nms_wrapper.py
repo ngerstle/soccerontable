@@ -5,8 +5,11 @@
 # Written by Ross Girshick
 # --------------------------------------------------------
 
-# from utils.nms.nms.gpu_nms import gpu_nms
-from utils.nms.nms.cpu_nms import cpu_nms
+import sys
+if sys.version_info[0] < 3:
+ from nms.cpu_nms import cpu_nms
+else: #from nms.cpu_nms import cpu_nms
+ from utils.nms.nms.cpu_nms import cpu_nms
 
 
 def nms(dets, thresh, gpu=-1):

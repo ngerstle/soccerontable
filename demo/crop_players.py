@@ -1,3 +1,11 @@
+import os, sys
+sys.path.append(os.path.abspath("/data/soccerontable"))
+sys.path.append(os.path.abspath("/data/soccerontable/utils"))
+sys.path.append(os.path.abspath("/data/soccerontable/soccer3d"))
+sys.path.append(os.path.abspath("/data/soccerontable/soccer3d/instancesegm"))
+#sys.path.append(os.path.abspath("/data/soccerontable/socce3d/instancesegm"))
+
+
 import numpy as np
 import os
 import argparse
