@@ -220,7 +220,7 @@ RUN pip2.7 install pycocotools h5py
 RUN pip3 install pycocotools h5py
 RUN mkdir -p  ${DATADIR}/detectron
 
-WORKDIR ${SOCCERCODE
+WORKDIR ${SOCCERCODE}
 RUN cp ${SOCCERCODE}/utils/thirdpartyscripts/infer_subimages.py ${DETECTRON}/tools/
 
 
