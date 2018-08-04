@@ -11,7 +11,7 @@ set -e
 
 ## run detectron
 cd $DETECTRON 
-python2 tools/infer_subimages.py \
+PYTHONPATH=:$DETECTRON/detectron/:/usr/local/caffe2_build/  python2 tools/infer_subimages.py \
 	--cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
 	--output-dir $DATADIR/detectron \
 	--image-ext jpg \
