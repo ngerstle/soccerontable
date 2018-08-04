@@ -6,7 +6,7 @@ import utils.files as file_utils
 
 
 parser = argparse.ArgumentParser(description='Calibrate a soccer video')
-parser.add_argument('--path_to_data', default='/home/krematas/Mountpoints/grail/data/barcelona', help='path')
+parser.add_argument('--path_to_data', default='/opt/datadir', help='path')
 opt, _ = parser.parse_known_args()
 
 db = soccer3d.YoutubeVideo(opt.path_to_data)

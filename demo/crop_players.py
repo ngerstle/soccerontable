@@ -15,7 +15,7 @@ import soccer3d.instancesegm.utils as seg_utils
 
 
 parser = argparse.ArgumentParser(description='Calibrate a soccer video')
-parser.add_argument('--path_to_data', default='/home/krematas/Mountpoints/grail/data/barcelona', help='path')
+parser.add_argument('--path_to_data', default='/opt/datadir', help='path')
 parser.add_argument('--margin', type=int, default=0, help='Margin around the pose')
 opt, _ = parser.parse_known_args()
 

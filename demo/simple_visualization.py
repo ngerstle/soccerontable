@@ -129,7 +129,7 @@ void main()
 """
 
 parser = argparse.ArgumentParser(description='Track camera given an initial estimate')
-parser.add_argument('--path_to_data', default='/home/krematas/Mountpoints/grail/data/barcelona', help='path')
+parser.add_argument('--path_to_data', default='/opt/datadir', help='path')
 parser.add_argument('--start', type=int, default=0, help='Starting frame')
 parser.add_argument('--end', type=int, default=-1, help='Ending frame')
 parser.add_argument('--fps', type=int, default=15, help='Ending frame')

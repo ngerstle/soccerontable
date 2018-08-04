@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 parser = argparse.ArgumentParser(description='Calibrate a soccer video')
-parser.add_argument('--path_to_data', default='/home/krematas/Mountpoints/grail/data/barcelona', help='path')
+parser.add_argument('--path_to_data', default='/opt/datadir', help='path')
 parser.add_argument('--dist_thresh', type=int, default=50, help='Distance threshold for merging tracklets (in pixels)')
 opt, _ = parser.parse_known_args()
 
