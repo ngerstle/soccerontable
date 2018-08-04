@@ -4,7 +4,7 @@ FROM caffe2/caffe2:snapshot-py2-cuda8.0-cudnn7-ubuntu16.04
 RUN cp -r /usr/local/caffe2 /usr/local/caffe2_build
 ENV Caffe2_DIR /usr/local/caffe2_build
 
-ENV PYTHONPATH /usr/local/caffe2_build:${PYTHONPATH}
+ENV PYTHONPATH ${PYTHONPATH}:/usr/local/caffe2_build
 ENV LD_LIBRARY_PATH /usr/local/caffe2_build/lib:${LD_LIBRARY_PATH}
 
 ########### UTILS
@@ -193,7 +193,7 @@ ENV SOCCERCODE="${BASEDIR}/soccerontable"
 ENV DATADIR="${BASEDIR}/datadir"
 ENV MODELPATH="${BASEDIR}/model.pth"
 
-ENV PYTHONPATH="${PYTHONPATH}:${SOCCERCODE}:${OPENPOSEDIR}:${DETECTRON}"
+ENV PYTHONPATH="${PYTHONPATH}:${SOCCERCODE}:${DETECTRON}:${OPENPOSEDIR}"
 
 RUN git clone https://github.com/ngerstle/soccerontable.git ${SOCCERCODE}
 
