@@ -229,4 +229,5 @@ COPY runsoccercode.sh ${BASEDIR}/runsoccercode.sh
 RUN chmod u+x ${BASEDIR}/runsoccercode.sh
 
 
+WORKDIR ${BASEDIR}
 CMD ["/bin/bash"]
