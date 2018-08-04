@@ -184,7 +184,6 @@ RUN mkdir -p build && cd build \
 RUN cd models && ./getModels.sh
 
 WORKDIR ${OPENPOSEDIR}
-RUN ./build/openpose
 
 
 ###################### SOCCERONTABLE
