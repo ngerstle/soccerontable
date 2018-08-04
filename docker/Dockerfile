@@ -127,23 +127,8 @@ RUN pip2.7 install -r /opt/detectron/requirements.txt
 RUN make -j`nproc` && make -j`nproc` ops
 
 
-####################################### DENSEPOSE
-### Clone the Densepose repository
-##RUN git clone https://github.com/facebookresearch/densepose /opt/densepose
-##
-### Go to Densepose root
-##WORKDIR /opt/densepose
-##
-### Install Python dependencies
-##RUN pip3 install -r /opt/densepose/requirements.txt
-##RUN pip2.7 install -r /opt/densepose/requirements.txt
-##
-##
-### Set up Python modules & [Optional] Build custom ops
-##RUN make -j`nproc` && make -j`nproc` ops
-##
 
-###########################OPENCV/SOCCERONTABLE
+###########################OPENCV
 
 # opencv stuff
 
